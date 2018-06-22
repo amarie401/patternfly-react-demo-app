@@ -50,11 +50,22 @@ create-react-app build. The `App.scss` file will include all PatternFly Sass alo
 
 **Note** Only static assets which are `import`'ed into your application will be included in your resulting build output. I.e. `import './css/App.css';` will ensure `App.css` is included.
 
+## Quick Setup
+
+**Note** If you do not have yarn installed run: `npm install -g yarn`
+
+Run the following commands:
+```
+yarn install
+yarn build
+yarn start
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -62,11 +73,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.<br>
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -74,7 +85,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-### `npm run eject`
+### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -84,8 +95,29 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Prettier for VSCode
+If you are using Visual Studio Code as your code editor of choice, there is a package extension that will allow you to format your JavaScript/TypeScript/CSS using Prettier. 
+
+### Prettier VSCode Installation 
+You can install the prettier extension by searching for `Prettier - Code formatter`
+
+[Visual Studio Code Market Place: Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Upon installation you can begin using prettier through the command palette:
+
+```
+1. CMD + Shift + P -> Format Document
+OR
+1. Select the text you want to Prettify
+2. CMD + Shift + P -> Format Selection
+```
+
+**Note** If you don't like the defaults, you can rebind `editor.action.formatDocument` and `editor.action.formatSelection` in the keyboard shortcuts menu of vscode.**
+
+More information on prettier for vscode can be found here: https://github.com/prettier/prettier-vscode
+
 ## Do you have a question?
 There are a few things that can be done to resolve any questions or problems you might have.
  - Search our [GitHub issues](https://github.com/patternfly/patternfly-react/issues)
  - Join our patternfly-react channel on [Slack](http://slack.patternfly.org)
- - Join our mailing-list following the instructions on [patternfly.org](http://www.patternfly.org/community/)
+ - Join our mailing-list following the instructions on [patternfly.org](http://www.patternfly.org/get-started/community/)
